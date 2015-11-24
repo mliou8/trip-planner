@@ -1,4 +1,16 @@
+{% extends "layout.html" %}
 
+{% block content %}
+
+<div class = "row padnav">
+  <div class = "col-lg-8" id = "map">
+    <h1>map</h1>
+  </div>
+  <div class = "col-lg-4" id = "side">
+    <h1>side</h1>
+  </div>
+</div>
+<div class = "hidden">
   <h3>Trips List</h3>
   <hr>
   <ul class="list-unstyled">
@@ -25,3 +37,5 @@
       </li>
     </ul>
   </ul>
+</div>
+{% endblock %}

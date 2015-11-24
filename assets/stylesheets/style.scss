@@ -1,7 +1,28 @@
-body {
-	ul {
-		li {
-			background-color: blue;
-		}
-	}
+* {
+	box-sizing: border-box;
+}
+
+.clearfix {
+  &:after {
+  	content: "";
+  	display: block;
+  	clear:both;
+  }
+}
+#map {
+	background-color: gray;
+	height: 100%;
+	display: inline-block;
+	padding-top:50px;
+}
+
+#side {
+	background-color: blue;
+	height: 100%;
+	display: inline-block;
+	padding-top:50px;
+}
+
+.padnav {
+	padding-top:60px;
 }

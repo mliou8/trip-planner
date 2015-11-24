@@ -15,7 +15,6 @@ router.get('/', function(req, res, next) {
 	Hotel.find({}).exec().then(function(hotels) {
 	    Restaurant.find({}).exec().then(function(restaurants) {
 	        Activity.find({}).exec().then(function(activities) {
-	        	console.log(hotels, restaurants, activities);
 	            res.render('index', {
 	                all_hotels: hotels,
 	                all_restaurants: restaurants,
