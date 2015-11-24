@@ -11,15 +11,17 @@ var Restaurant = models.Restaurant;
 
 
 
-
-Hotel.find({}).exec().then(function(hotels) {
-    Restaurant.find({}).exec().then(function(restaurants) {
-        Activity.find({}).exec().then(function(activities) {
-            res.render('index', {
-                all_hotels: hotels,
-                all_restaurants: restaurants,
-                all_activities: activities
-            });
-        }).then(null, console.log);
-    }).then(null, console.log);
-}).then(null, console.log);
+router.get('/', function(req, res, next) {
+	Hotel.find({}).exec().then(function(hotels) {
+	    Restaurant.find({}).exec().then(function(restaurants) {
+	        Activity.find({}).exec().then(function(activities) {
+	        	console.log(hotels, restaurants, activities);
+	            res.render('index', {
+	                all_hotels: hotels,
+	                all_restaurants: restaurants,
+	                all_activities: activities
+	            });
+	        }).then(null, console.log);
+	    }).then(null, console.log);
+	}).then(null, console.log);
+});
