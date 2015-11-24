@@ -9,10 +9,8 @@
   	clear:both;
   }
 }
-#map {
-	background-color: gray;
-	min-height: 100%;
-	display: inline-block;
+#map-canvas {
+	height: 100vh;
 }
 
 #side {
@@ -21,6 +19,6 @@
 	display: inline-block;
 }
 
-body { 
-	padding-top: 50px; 
+body {
+	padding-top: 50px;
 }

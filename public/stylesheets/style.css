@@ -6,10 +6,8 @@
   display: block;
   clear: both; }
 
-#map {
-  background-color: gray;
-  min-height: 100%;
-  display: inline-block; }
+#map-canvas {
+  height: 100vh; }
 
 #side {
   background-color: light-blue;
