@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <head>
-	<title>TripPlanner</title>
-	<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>TripPlanner</title>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/stylesheets/style.css" rel="stylesheet">
 </head>
 
 <body>
-	<nav class="navbar navbar-fixed-top navbar-inverse">
-		<div class = "container-fluid">
-			<div class="navbar-header">
-				<h1>TripPlanner</h1>
-			</div>
-		</div>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+ 		<div class="container-fluid">
+   <!-- Brand and toggle get grouped for better mobile display -->
+   			<div class="navbar-header">
+     			<a class="navbar-brand" href="#">Brand</a>
+   			</div>
+ 		</div><!-- /.container-fluid -->
 	</nav>
-    <div class="container-fluid">
-      {% block content %}{% endblock %}
-    </div>
-    <hr/>
-    <div id="footer" class="container text-muted">
-      TripPlanner by Fullstack Academy
-    </div>
-    <script src="/jquery/jquery.min.js"></script>
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
-  </body>
+
+<!-- Bootstrap navbar -->
+	{% block content %}{% endblock %}
+	<hr/>
+   	<div id="footer" class="container text-muted">
+    	TripPlanner by Fullstack Academy
+   	</div>
+   	<script src="/jquery/jquery.min.js"></script>
+   	<script src="/bootstrap/js/bootstrap.min.js"></script>
+</body>
 </html>

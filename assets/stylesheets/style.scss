@@ -11,18 +11,16 @@
 }
 #map {
 	background-color: gray;
-	height: 100%;
+	min-height: 100%;
 	display: inline-block;
-	padding-top:50px;
 }
 
 #side {
-	background-color: blue;
-	height: 100%;
+	background-color: light-blue;
+	min-height: 100%;
 	display: inline-block;
-	padding-top:50px;
 }
 
-.padnav {
-	padding-top:60px;
+body { 
+	padding-top: 50px; 
 }

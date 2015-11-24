@@ -8,15 +8,13 @@
 
 #map {
   background-color: gray;
-  height: 100%;
-  display: inline-block;
-  padding-top: 50px; }
+  min-height: 100%;
+  display: inline-block; }
 
 #side {
-  background-color: blue;
-  height: 100%;
-  display: inline-block;
-  padding-top: 50px; }
+  background-color: light-blue;
+  min-height: 100%;
+  display: inline-block; }
 
-.padnav {
-  padding-top: 60px; }
+body {
+  padding-top: 50px; }

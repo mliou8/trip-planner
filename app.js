@@ -14,7 +14,7 @@ app.engine('html', swig.renderFile);
 swig.setDefaults({ cache: false });
 
 app.use(morgan('dev'));
-app.use(express.static(path.join(__dirname, './public')));
+app.use('/public/', express.static(path.join(__dirname, './public')));
 app.use('/bootstrap/', express.static(path.join(__dirname, './node_modules/bootstrap/dist')));
 app.use('/jquery/', express.static(path.join(__dirname, './node_modules/jquery/dist')));
 app.use(bodyParser.json());
